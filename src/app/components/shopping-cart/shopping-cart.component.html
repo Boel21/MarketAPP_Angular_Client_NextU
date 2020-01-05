@@ -1,0 +1,59 @@
+<div id="main">     
+    <div class="fondo card-body"> 
+         <app-navbar></app-navbar> 
+         <div class="container position-fixed" style="background-color: #e3f2fd;">
+             <nav class="nav navbar">
+               <div class= container>
+                    <div class="col col-lg-6">
+                       <h5>Carrito de Compras</h5> 
+                    </div>
+                  <div class="col col-lg-6">
+                      <div class="row">
+                        <div  class="col-12 col-sm-12 col-lg-3">
+                          <h3>Total ${{totaly}}</h3>
+                         </div>
+                      <div class="col col-lg-3">
+                          <a (click) = "pagar()" class="btn btn-success btn-sm">Pagar</a>
+                       </div> 
+                         <div class="col col-lg-3">
+                          <a (click)="borrarCompra()" class="btn btn-warning btn-sm">Cancelar</a>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+              </nav>
+             <div class="container">
+               <div class="col col-lg-11">
+                <hr>
+              </div>
+            </div>  
+             <div class="card-body sub-cont" style="background-color: #e3f2fd;">
+                     <div class="container">
+                        <div class="table-sm">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Imagen</th>
+                                  <th>Articulo</th>
+                                  <th>Cantidad</th>
+                                  <th>Precio</th>
+                                  <th>Sub-Total</th>
+                              </thead>
+                              <tbody>
+                                <tr *ngFor="let selected of productSelected">
+                                    <td><img [src] = "selected.img" class="imagen"/></td>
+                                    <td>{{selected.nombre}}</td>
+                                    <td>{{selected.cant_sell}}</td>
+                                    <td>$ {{selected.precio}}</td>
+                                    <td>$ {{selected.subTotal}}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                     </div>
+                 </div>
+            </div>
+         </div>
+     </div>
+ </div>
+ 
+ 

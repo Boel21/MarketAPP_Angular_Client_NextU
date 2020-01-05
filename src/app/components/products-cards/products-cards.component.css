@@ -1,0 +1,101 @@
+.card{
+    max-width: 280px;
+    height: 100%;
+}
+.card-img-top{
+    padding: 10%;
+    min-height: 150px;
+}
+p{
+    text-align: left;
+    font-size: 10px;
+}
+h4{
+    text-align: left;
+    font-size: 15px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .ver_mas{
+        margin-left: 10px;
+    }
+    .add_more{
+        padding: 6%;
+    }
+    .search{
+        padding: 5px; 
+        margin-left: 20px;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) { 
+    .ver_mas{
+       margin-left: 25px; 
+    }
+    p{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 18px;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .card-img-top{
+        padding: 5%;
+        max-height: 100px;
+    }
+    .ver_mas{
+        margin-left: 0px;
+    }
+    .add_more{
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .search{
+        padding: 0px; 
+        margin-left: 0px;
+    }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    p{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .card-img-top{
+        padding: 4%;
+    }
+    
+}
+/* Extra large devices (large desktops, 1500px and up) */
+@media (min-width: 1500px) {  
+    .card-img-top{
+        padding: 0%;
+    }
+    .fondo{
+        min-width: 1920px;
+        min-height: 1024px;
+    }
+    span{
+        font-size: 40px;
+        font-style: bold;
+    }
+    .vermas{
+        width: 500px;
+        min-height: 500px;
+        
+    }
+    .vermas>h4{
+        font-size: 30px;
+    }
+    .vermas>p{
+        font-size: 20px;
+    }
+    
+}

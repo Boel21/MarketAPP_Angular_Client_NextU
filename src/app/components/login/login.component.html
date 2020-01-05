@@ -1,0 +1,29 @@
+<div id="login">
+        <div class="fondo card-body">
+            <div class="cardback card-body">
+                <p class="inic_">Inicio de Sesión</p>
+                <form [formGroup]="miFormulario" (ngSubmit)="onSubmit(user.value, password.value)" class="login_">
+                     <div class="form-group form-control-lg">
+                        <input type="text" formControlName="email" class="form-control" placeholder="Email" #user
+                        [ngClass]="{'is-invalid': submitted && f.email.errors }" />
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback" style="background-color: aliceblue;">
+                            <div *ngIf="f.email.errors.required">Email is required</div>
+                            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                        </div>
+                    </div>
+                    <br *ngIf="submitted && f.email.errors">
+                    <div class="form-group form-control-lg">
+                        <input type="password" formControlName="password" class="form-control" placeholder="Password" #password
+                        [ngClass]="{'is-invalid': submitted && f.password.errors }" />
+                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback" style="background-color: aliceblue;">
+                            <div *ngIf="f.password.errors.required">Password is required</div>
+                        </div>
+                    </div>
+                    <br *ngIf="submitted && f.password.errors">
+                    <div class="form-group btn-sm col-xl-5 offset-xl-3">
+                        <button class="btn btn-primary btn-block">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

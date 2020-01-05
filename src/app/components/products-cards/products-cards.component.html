@@ -1,0 +1,33 @@
+<div *ngIf = "ver === false" class="container">
+    <div *ngFor = "let product of products | filter:message" class="card">
+        <img class="card-img-top align-self-center" [src] = "product.img" alt="Card image">
+            <div  class="card-body">
+                <h4 class = "card-title">Nombre: {{product.nombre}}</h4>
+                <p  class = "card-text">Precio: $ {{product.precio}}</p>
+                <p   *ngIf = "product.cant_dispo != 0" class = "card-text">Cantidad Disponible: {{product.cant_dispo}}</p> 
+                <p  *ngIf = "product.cant_dispo == 0" style="color: red;">Agotado</p>
+            <div class="row">
+                <div class="col col-sm-12 col-lg-6 col-xl-6">
+                    <button (click)="verMas(product)" class="btn btn-primary btn-sm ver_mas">Ver mas</button>
+                </div> 
+                <div class="col col-sm-4 col-lg-3 col-xl-3 add_more">
+                    <button (click)="addToCar(cantidad.value,product)" class="btn btn-warning btn-sm" [disabled]="product.cant_dispo === 0">Añadir</button>
+                </div>
+                <div class="col col-sm-6  col-lg-3 col-xl-3 btn-sm search">
+                    <input type="number" class="form-control" name="cantidad" #cantidad  value="1" min="1" max="{{product.cant_dispo}}"/>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+
+<div *ngIf = "ver === true" class="container">
+    <img class="card-img-top vermas"  [src] = "verMasdata.img" alt="Card image">
+      <div  class="card-body vermas align-items-sm-center">
+            <h4 class="card-title">Nombre: {{verMasdata.nombre}}</h4>
+             <p  class="card-text">Precio: $ {{verMasdata.precio}}</p>
+             <p  class="card-text">Cantidad Disponible: {{verMasdata.cant_dispo}}</p> 
+             <a (click)="atras()" class="btn btn-primary btn-lg">atras</a>
+    </div>    
+</div>
+

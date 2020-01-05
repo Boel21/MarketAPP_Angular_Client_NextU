@@ -1,0 +1,154 @@
+.fondo{
+    background-image:url('../../../assets/img/main-fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 820px;
+  }
+ .container{
+    top:15%;
+    right: 10%;
+    max-width: 300px;
+ }
+ .sub-cont{
+     padding: 5px;
+     max-width: 350px;
+     max-height: 350px;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     right: 10%;
+ }
+ .card-columns{
+     margin-left: 2px;
+     margin-right: 20px;
+ }
+ span{
+     margin-left: 45px;
+ }
+ .busqueda{
+     max-width:280px;
+ }
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    .fondo{
+        max-width: 767px;
+        min-height: 414px;
+        padding: 20%;
+    }
+    .container{
+        top: 25%;
+        max-width: 600px;
+        right: 3%;
+    }
+    .sub-cont{
+        max-width: 600px;
+        max-height: 100px;
+        right: 3%;
+    }
+    .busqueda{
+        margin-left: 250px;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .fondo{
+        max-width: 812px;
+        min-height: 1280px;
+        padding: 20%;
+    }
+    .container{
+        max-width: 700px;
+        top: 10%;
+        right: 4%;
+    }
+    .sub-cont{
+        min-height: 500px;
+        max-width: 850px;
+    }
+    .busqueda{
+        margin-left: 350px;
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .fondo{
+        max-width: 1024px;
+        min-height: 1024px;
+    }
+    .container{
+        min-width: 850px;
+        top: 10%;
+        right: 8%;
+    }
+    .sub-cont{
+        max-height: 400px;
+        min-width: 950x;
+    }
+    .busqueda{
+        max-width: 700px;
+        right: 10%;
+    }
+}
+@media (min-width: 1200px) {
+    .fondo{
+        min-width: 1920px;
+        min-height: 1024px;
+    }
+    .container{
+        min-width: 1080px;
+        top: 15%;
+    } 
+    span{
+        font-size: 25px;
+        font-style: bold;
+    }
+    h5{
+        font-size:30px;
+        margin: 25px;
+    }
+    .busqueda{
+        max-width: 700px;
+        left: 43%;
+    }
+    .sub-cont{
+        min-width: 1060px;
+        min-height: 100%;
+        left: 12%
+    }
+    .nav{
+        right: 5%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1500px) {  
+    .fondo{
+        min-width: 1920px;
+        min-height: 1024px;
+    }
+    .container{
+        min-width: 1520px;
+        top: 15%;        
+    }
+    .sub-cont{
+        min-width: 1500px;
+        min-height: 650px;
+    }
+    .busqueda{
+        margin-left: 600px;
+    }
+    h5{
+        margin-left:60px;
+    }
+    .tarjetas{
+        margin-left: 50px;
+    }
+}

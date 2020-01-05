@@ -1,0 +1,40 @@
+<div id="main">     
+   <div class="fondo card-body"> 
+        <app-navbar></app-navbar> 
+        <div class="container position-fixed" style="background-color: #e3f2fd;">
+            <nav class="nav navbar">
+               <h5>Catálogo de Productos</h5> 
+               <div class="row busqueda">
+                    <label><span>¿Qué estás buscando?</span></label> 
+                </div>
+            </nav>
+            <div class="container">
+                    <div class="row">
+                        <div class="col busqueda col-xl-4  position-fixed">
+                            <div class="form-group">
+                                 <input (ngModelChange)="changeMessage($event)"
+                                 class="form-control col-xl-5" type="text" 
+                                 placeholder="Buscar Productos"
+                                name= "findProducts"  [(ngModel)] = "findProducts"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="container">
+                    <hr>
+                </div>   
+            <div class="card-body sub-cont" style="background-color: #e3f2fd;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="card-columns tarjetas">
+                                <app-products-cards></app-products-cards>  
+                            </div> 
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light col-lg-10 col-xs-10 col md-10 col-sm-12" style="background-color: #e3f2fd; position: fixed;">
+    <span class="tituo">La Bodega</span>
+        <div class="btn-group icon_">
+            <a [routerLink]="['/main']"><i class="fas fa-bars" ></i></a>
+        <a [routerLink]="['/shoppingCart']"><i class="fas fa-shopping-cart" ></i></a><span *ngIf="productsSelected.length != 0" class="indice">{{productsSelected.length}}</span>
+            <a [routerLink]="['/main']"><i class="fas fa-home" ></i></a>
+            <a [routerLink]="['']"><i class="fas fa-sign-out-alt" ></i></a> 
+        </div>
+ </nav>

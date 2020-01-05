@@ -1,0 +1,86 @@
+.navbar{
+    position: fixed;
+    top:0%;
+    right: 0%;
+ }
+ .icon_{
+     padding: 10px;
+ }
+ .fas{
+     padding: 10px;
+ }
+ .titulo{
+    font-style: italic;
+ }
+ .indice {
+	display: block;
+	color: rgb(10, 9, 9);
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    background-color: red;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    top: 5px;
+}
+
+ /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .navbar{
+        position: fixed;
+     }
+     .icon_{
+         padding: 10px;
+     }
+     .fas{
+         padding: 10px;
+     }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .navbar{
+        position: fixed;
+        top:0%;
+        right: 8%;
+     }
+     .icon_{
+         padding: 10px;
+     }
+     .fas{
+         padding: 10px;
+     }
+}
+@media (min-width: 1200px) {
+    .navbar{
+        position: fixed;
+        top:0%;
+        max-width: 1080px;
+     }
+     span{
+         font-size: 40px;
+     }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1500px) {  
+    .navbar{
+        position: fixed;
+        top:0%;
+        max-width: 1520px;
+     }
+     .icon_{
+         padding: 10px;
+     }
+     .fas{
+         padding: 10px;
+     }
+    span{
+        font-size: 40px;
+    }
+}
